@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        background-color: #EBEBF0;
+        cursor: pointer;
+        text-align: left;
+        user-select: none;
+    }
+
+    th,
+    td {
+        font-size: smaller;
+        padding: 0.5rem;
+    }
+}
+
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    border-top: 0.6rem solid #BBBBBB;
+    margin-left: -0.6rem;
+    transition: .5s ease;
+    float: right;
+    margin-top: 0.2rem;
+}
+
+.asc {
+    transform: rotate(180deg);
+    transform-origin: 50% 40%;
+}
+
+.hidden {
+    display: none;
+}

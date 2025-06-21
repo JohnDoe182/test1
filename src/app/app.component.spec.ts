@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'test1' title`, () => {
+  it(`should have the 'Действующие маршруты IPv4' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('test1');
+    expect(app.title).toEqual('Действующие маршруты IPv4');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, test1');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Действующие маршруты IPv4');
   });
 });
